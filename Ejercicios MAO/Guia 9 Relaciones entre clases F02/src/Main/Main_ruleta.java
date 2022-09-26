@@ -32,15 +32,20 @@ mojar. Al final del juego, se debe mostrar que jugador se mojó.
 Pensar la lógica necesaria para realizar esto, usando los atributos de la clase Juego.*/
 package Main;
 
+import Entidad.Revolver_de_agua;
+import Servicio.Servicio_ruleta;
+
 
 public class Main_ruleta {
 
     
     public static void main(String[] args) {
        
+        Servicio_ruleta j1 = new Servicio_ruleta();
+        Revolver_de_agua r1 = new Revolver_de_agua();
         
-        
-        
+        j1.llenarRevolver();
+        j1.mojar(r1.getPosicionActual(),r1.getPosicionAgua());
         
     }
     
