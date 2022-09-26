@@ -14,16 +14,19 @@ public class Relaciones_Ej1 {
     
     public static void main(String[] args) {
         
-        Persona p1=new Persona("Pablo","gimenez",33,34290267);
-        Persona p2=new Persona("Sebastian","girolmini",32,36584478);
-     
-        Perro pe1=new Perro("apache","BullTerrier",7,"mediano");
-        Perro pe2=new Perro("Luca","boxer",4,"grande");
+        Persona p1=new Persona("Pablo","Gimenez",33,34290267);
+        Persona p2=new Persona("Sebastian","Girolmini",35,32668773);
+        
+        Perro pe1=new Perro("Apache","BullTerrier",7,"Mediano");
+        Perro pe2=new Perro("Luca","Boxer",4,"Grande");
          
         p1.setPerro(pe1);
         p2.setPerro(pe2);
-         
+        
         System.out.println(p1.toString()); 
+        System.out.println("");
+        System.out.println("----------------");
+        System.out.println("");
         System.out.println(p2.toString());
          
     }
