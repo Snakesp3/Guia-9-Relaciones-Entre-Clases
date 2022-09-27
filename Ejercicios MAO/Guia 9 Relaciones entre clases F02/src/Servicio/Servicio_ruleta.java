@@ -65,7 +65,7 @@ public class Servicio_ruleta {
             System.out.println("*****************************");
         }
     }
-//cambia a la siguiente posición del tambor
+    //cambia a la siguiente posición del tambor
 
     public void siguienteChorro() {
         String siguiente = "si";
@@ -76,7 +76,7 @@ public class Servicio_ruleta {
             siguiente = leer.next();
         } while (siguiente.equalsIgnoreCase("si"));
     }
-    
+    //muestra información del revolver (posición actual y donde está el agua)
     public void posicionActualDeTodo(){
         System.out.println("Posicion del tambor: " +r1.getPosicionActual()+
                 "\nPosicion de la bala de agua: "+r1.getPosicionAgua());
