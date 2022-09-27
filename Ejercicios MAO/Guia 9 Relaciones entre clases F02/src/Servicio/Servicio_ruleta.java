@@ -32,6 +32,7 @@ mojar. Al final del juego, se debe mostrar que jugador se mojó.
 Pensar la lógica necesaria para realizar esto, usando los atributos de la clase Juego.*/
 package Servicio;
 
+import Entidad.Jugador;
 import Entidad.Revolver_de_agua;
 import java.util.Scanner;
 
@@ -39,6 +40,7 @@ public class Servicio_ruleta {
 
     Scanner leer = new Scanner(System.in);
     Revolver_de_agua r1 = new Revolver_de_agua();
+    Jugador j1 = new Jugador();
 
     /*llenarRevolver(): le pone los valores de posición actual y de posición del agua. Los valores
     deben ser aleatorios.*/
@@ -81,7 +83,19 @@ public class Servicio_ruleta {
         System.out.println("Posicion del tambor: " +r1.getPosicionActual()+
                 "\nPosicion de la bala de agua: "+r1.getPosicionAgua());
     }
-            
+      
+    public void diparar(){
+        
+        llenarRevolver();
+        mojar();
+        siguienteChorro();
+        
+        
+        
+        
+    }
+    
+    
     
 }
 

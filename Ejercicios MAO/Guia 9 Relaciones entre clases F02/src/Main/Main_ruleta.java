@@ -47,7 +47,9 @@ public class Main_ruleta {
         //j1.llenarRevolver();
         
         //j1.mojar();
-        j1.siguienteChorro();
+        //j1.siguienteChorro();
+        
+        j1.diparar();
         System.out.println("--------------------------------");
         System.out.println("*****Informacion del Revolver*****");
         System.out.println("***con respecto a cada posicion***");
