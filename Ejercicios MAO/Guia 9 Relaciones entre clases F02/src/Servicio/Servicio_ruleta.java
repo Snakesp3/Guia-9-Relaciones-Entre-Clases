@@ -33,15 +33,17 @@ Pensar la lógica necesaria para realizar esto, usando los atributos de la clase
 package Servicio;
 
 import Entidad.Revolver_de_agua;
+import java.util.Scanner;
 
 public class Servicio_ruleta {
 
+    Scanner leer = new Scanner(System.in);
     Revolver_de_agua r1 = new Revolver_de_agua();
 
     /*llenarRevolver(): le pone los valores de posición actual y de posición del agua. Los valores
     deben ser aleatorios.*/
     public void llenarRevolver() {
-        System.out.println("              ***Vive o Mojate***");
+        System.out.println("***Vive o Mojate***");
         r1.setPosicionActual((int) (Math.random() * 6) + 1);
         r1.setPosicionAgua((int) (Math.random() * 6) + 1);
         System.out.println("-Posicion del tambor: " + r1.getPosicionActual() + "\n-Posicion de la bala de agua: " + r1.getPosicionAgua());
@@ -62,18 +64,25 @@ public class Servicio_ruleta {
             System.out.println("*Las posiciones no coinciden*");
             System.out.println("*****************************");
         }
-
     }
-    //cambia a la siguiente posición del tambor
+//cambia a la siguiente posición del tambor
+
     public void siguienteChorro() {
-
         String siguiente = "si";
-
         do {
-            
-
+            llenarRevolver();
+            mojar();
+            System.out.println("Quiere seguir probando?");
+            siguiente = leer.next();
         } while (siguiente.equalsIgnoreCase("si"));
-
     }
-
+    
+    public void posicionActualDeTodo(){
+        System.out.println("Posicion del tambor: " +r1.getPosicionActual()+
+                "\nPosicion de la bala de agua: "+r1.getPosicionAgua());
+    }
+            
+    
 }
+
+

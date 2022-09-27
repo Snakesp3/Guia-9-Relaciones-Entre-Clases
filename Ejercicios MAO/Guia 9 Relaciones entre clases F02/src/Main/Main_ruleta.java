@@ -44,10 +44,15 @@ public class Main_ruleta {
         Servicio_ruleta j1 = new Servicio_ruleta();
         Revolver_de_agua r1 = new Revolver_de_agua();
         
-        j1.llenarRevolver();
-        System.out.println("------------------------------------");
-        j1.mojar();
+        //j1.llenarRevolver();
         
+        //j1.mojar();
+        j1.siguienteChorro();
+        System.out.println("--------------------------------");
+        System.out.println("*****Informacion del Revolver*****");
+        System.out.println("***con respecto a cada posicion***");
+               
+        j1.posicionActualDeTodo();
     }
     
 }
