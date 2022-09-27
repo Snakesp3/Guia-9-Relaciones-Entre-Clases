@@ -72,31 +72,30 @@ public class Servicio_ruleta {
     public void siguienteChorro() {
         String siguiente = "si";
         do {
-            llenarRevolver();
+           // llenarRevolver();
             mojar();
             System.out.println("Quiere seguir probando?");
             siguiente = leer.next();
         } while (siguiente.equalsIgnoreCase("si"));
     }
+
     //muestra información del revolver (posición actual y donde está el agua)
-    public void posicionActualDeTodo(){
-        System.out.println("Posicion del tambor: " +r1.getPosicionActual()+
-                "\nPosicion de la bala de agua: "+r1.getPosicionAgua());
+    public void posicionActualDeTodo() {
+        System.out.println("Posicion del tambor: " + r1.getPosicionActual()
+                + "\nPosicion de la bala de agua: " + r1.getPosicionAgua());
     }
-      
-    public void diparar(){
-        
+
+    public void disparar() {
+
         llenarRevolver();
         mojar();
+       // boolean mojado;
+//        if (r1.getPosicionActual() == r1.getPosicionAgua()) {
+//            mojado = true;
+//            System.out.println("Fin del Juego");
+//          }else{
+//            mojado=false;
         siguienteChorro();
-        
-        
-        
-        
     }
-    
-    
-    
+
 }
-
-
