@@ -47,16 +47,17 @@ public class Servicio_ruleta {
         System.out.println("-Posicion del tambor: " + r1.getPosicionActual() + "\n-Posicion de la bala de agua: " + r1.getPosicionAgua());
 
     }
+
     /*devuelve true si la posición del agua coincide con la posición actual*/
     public void mojar() {
         boolean mojado;
-        if (r1.getPosicionActual()== r1.getPosicionAgua()) {
+        if (r1.getPosicionActual() == r1.getPosicionAgua()) {
             mojado = true;
             System.out.println("**************************");
             System.out.println("*Las posiciones coinciden*");
             System.out.println("**************************");
-        }else{
-            mojado=false;
+        } else {
+            mojado = false;
             System.out.println("*****************************");
             System.out.println("*Las posiciones no coinciden*");
             System.out.println("*****************************");
@@ -64,18 +65,15 @@ public class Servicio_ruleta {
 
     }
     //cambia a la siguiente posición del tambor
-    public void siguienteChorro(){
-        
-        String siguiente= "si";
-        
+    public void siguienteChorro() {
+
+        String siguiente = "si";
+
         do {
-            mojar();
             
+
         } while (siguiente.equalsIgnoreCase("si"));
-        
-        
-        
-        
+
     }
 
 }
