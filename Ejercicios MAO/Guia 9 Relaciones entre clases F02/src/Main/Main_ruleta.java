@@ -45,7 +45,8 @@ public class Main_ruleta {
         Revolver_de_agua r1 = new Revolver_de_agua();
         
         j1.llenarRevolver();
-        j1.mojar(r1.getPosicionActual(),r1.getPosicionAgua());
+        System.out.println("------------------------------------");
+        j1.mojar();
         
     }
     
