@@ -32,8 +32,8 @@ public class Entidad_baraja {
     // â€¢ siguienteCarta(): devuelve la siguiente carta que estÃ¡ en la baraja, cuando
     // no haya mÃ¡s o
     // se haya llegado al final, se indica al usuario que no hay mÃ¡s cartas.
-    public Carta siguienteCarta() {
-        Carta siguiente_carta = this.mazo.get(0);
+    public Entidad_carta siguienteCarta() {
+        Entidad_carta siguiente_carta = this.mazo.get(0);
         this.mazo.remove(0);
         this.repartidas.add(siguiente_carta);
         if (this.cartasDisponibles() == 0) {
@@ -51,16 +51,16 @@ public class Entidad_baraja {
     // nÃºmero de cartas.
     // En caso de que haya menos cartas que las pedidas, no devolveremos nada, pero
     // debemos indicÃ¡rselo al usuario.
-    public ArrayList<Carta> darCartas(int cantidad) {
+    public ArrayList<Entidad_carta> darCartas(int cantidad) {
         if (this.cartasDisponibles() >= cantidad) {
-            ArrayList<Carta> reparto = new ArrayList<Carta>();
+            ArrayList<Entidad_carta> reparto = new ArrayList<Entidad_carta>();
             for (int i = 0; i < cantidad; i++) {
                 reparto.add(this.siguienteCarta());
             }
             return reparto;
         }
         System.out.println("Se pidio mas cartas de las que hay disponibles");
-        return new ArrayList<Carta>();
+        return new ArrayList<Entidad_carta>();
     }
 
     // â€¢ cartasMonton(): mostramos aquellas cartas que ya han salido, si no ha
@@ -71,7 +71,7 @@ public class Entidad_baraja {
             return;
         }
         System.out.println("Las cartas repartidas fueron:");
-        for (Carta carta_aux : this.repartidas) {
+        for (Entidad_carta carta_aux : this.repartidas) {
             System.out.println(carta_aux);
         }
     }
@@ -85,7 +85,7 @@ public class Entidad_baraja {
             return;
         }
         System.out.println("Las cartas en el mazo eran:");
-        for (Carta carta_aux : this.mazo) {
+        for (Entidad_carta carta_aux : this.mazo) {
             System.out.println(carta_aux);
         }
     }

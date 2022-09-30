@@ -5,6 +5,9 @@
  */
 package Entidad;
 
+import enums.Numero;
+import Enums.Palo;
+
 /**
  *
  * @author Snakesp2
@@ -14,7 +17,10 @@ public class Entidad_carta {
     private Numero numero;
     private Palo palo;
 
-    public Carta(Numero numero, Palo palo) {
+    public Entidad_carta() {
+    }
+
+    public Entidad_carta(Numero numero, Palo palo) {
         this.numero = numero;
         this.palo = palo;
     }

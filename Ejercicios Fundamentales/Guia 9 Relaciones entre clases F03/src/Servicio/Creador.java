@@ -5,12 +5,11 @@
  */
 package Servicio;
 
-/**
- *
- * @author Snakesp2
- */
+import Entidad.Entidad_baraja;
+
 public class Creador {
-    public static Baraja crearBaraja() {
-        return new Baraja();
+
+    public static Entidad_baraja crearBaraja() {
+        return new Entidad_baraja();
     }
 }

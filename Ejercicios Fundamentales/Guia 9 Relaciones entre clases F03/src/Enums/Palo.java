@@ -5,12 +5,10 @@
  */
 package Enums;
 
-/**
- *
- * @author Snakesp2
- */
-public class Palo {
-    ORO("Oro"), ESPADA("Espada"), BASTO("Basto"), COPA("Copa");
+
+public enum Palo {
+    
+     ORO("Oro"), ESPADA("Espada"), BASTO("Basto"), COPA("Copa");
 
     private String nombre;
 
