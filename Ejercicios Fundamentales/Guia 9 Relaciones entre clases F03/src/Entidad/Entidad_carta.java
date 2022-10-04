@@ -43,7 +43,7 @@ public class Entidad_carta {
 
     @Override
     public String toString() {
-        return this.getNumero().getNumero() + " de " + this.getPalo().getNombre();
+        return this.getNumero() + " de " + this.getPalo().getNombre();
     }
 
 }

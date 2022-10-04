@@ -5,6 +5,8 @@
  */
 package Entidad;
 
+import Enums.Palo;
+import enums.Numero;
 import java.util.ArrayList;
 import java.util.Collections;
 
@@ -19,7 +21,7 @@ public class Entidad_baraja {
     public Baraja() {
         for (Numero num_aux : Numero.values()) {
             for (Palo palo_aux : Palo.values()) {
-                this.mazo.add(new Carta(num_aux, palo_aux));
+                this.mazo.add(new carta(num_aux, palo_aux));
             }
         }
     }
